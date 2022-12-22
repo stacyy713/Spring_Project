@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement />
+  <nodes>
+    <node x="0.0" y="669.0">com.cleaning.webproject.controllers.AdminController</node>
+    <node x="172.90156250000007" y="224.0">com.cleaning.webproject.models.CleanService</node>
+    <node x="213.0" y="1103.0">com.cleaning.webproject.controllers.MainController</node>
+    <node x="1062.8535416666666" y="0.0">com.cleaning.webproject.models.Role</node>
+    <node x="336.0" y="941.0">com.cleaning.webproject.config.MvcConfig</node>
+    <node x="923.0" y="941.0">com.cleaning.webproject.WebprojectApplication</node>
+    <node x="167.29895833333336" y="546.0">com.cleaning.webproject.repo.CleanServiceRepository</node>
+    <node x="415.16875" y="191.0">com.cleaning.webproject.models.OrderService</node>
+    <node x="883.8954166666667" y="534.0">com.cleaning.webproject.repo.UserRepo</node>
+    <node x="0.0" y="941.0">com.cleaning.webproject.config.WebSecurityConfig</node>
+    <node x="379.39541666666673" y="647.0">com.cleaning.webproject.controllers.ServiceList</node>
+    <node x="732.1687499999999" y="125.0">com.cleaning.webproject.models.User</node>
+    <node x="0.0" y="1103.0">com.cleaning.webproject.controllers.AboutUs</node>
+    <node x="684.0" y="941.0">com.cleaning.webproject.config.SecuringWebApplication</node>
+    <node x="1021.04375" y="713.0">com.cleaning.webproject.controllers.RegistrationController</node>
+    <node x="432.8473958333333" y="546.0">com.cleaning.webproject.repo.OrderRepository</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.cleaning.webproject.repo.CleanServiceRepository" target="com.cleaning.webproject.models.CleanService">
+      <point x="0.0" y="-14.5" />
+      <point x="264.29895833333336" y="514.0" />
+      <point x="259.90156250000007" y="514.0" />
+      <point x="0.0" y="80.5" />
+    </edge>
+    <edge source="com.cleaning.webproject.controllers.ServiceList" target="com.cleaning.webproject.repo.OrderRepository">
+      <point x="-22.9375" y="-124.5" />
+      <point x="539.9579166666667" y="627.0" />
+      <point x="506.8473958333333" y="627.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="com.cleaning.webproject.controllers.ServiceList" target="com.cleaning.webproject.models.User">
+      <point x="114.6875" y="-124.5" />
+      <point x="677.5829166666667" y="617.0" />
+      <point x="844.1635416666667" y="617.0" />
+      <point x="844.1635416666667" y="514.0" />
+      <point x="814.3354166666666" y="514.0" />
+      <point x="-164.33333333333334" y="179.5" />
+    </edge>
+    <edge source="com.cleaning.webproject.controllers.ServiceList" target="com.cleaning.webproject.models.OrderService">
+      <point x="68.8125" y="-124.5" />
+      <point x="631.7079166666667" y="627.0" />
+      <point x="618.66875" y="627.0" />
+      <point x="618.66875" y="514.0" />
+      <point x="662.66875" y="514.0" />
+      <point x="99.0" y="113.5" />
+    </edge>
+    <edge source="com.cleaning.webproject.controllers.ServiceList" target="com.cleaning.webproject.repo.UserRepo">
+      <point x="160.5625" y="-124.5" />
+      <point x="723.4579166666667" y="627.0" />
+      <point x="933.6454166666667" y="627.0" />
+      <point x="-49.75" y="26.5" />
+    </edge>
+    <edge source="com.cleaning.webproject.models.User" target="com.cleaning.webproject.models.Role">
+      <point x="123.25" y="-179.5" />
+      <point x="1101.9187499999998" y="100.0" />
+      <point x="1099.8535416666666" y="100.0" />
+      <point x="0.0" y="37.5" />
+    </edge>
+    <edge source="com.cleaning.webproject.controllers.ServiceList" target="com.cleaning.webproject.repo.CleanServiceRepository">
+      <point x="-160.5625" y="-124.5" />
+      <point x="402.33291666666673" y="627.0" />
+      <point x="312.79895833333336" y="627.0" />
+      <point x="48.5" y="14.5" />
+    </edge>
+    <edge source="com.cleaning.webproject.controllers.ServiceList" target="com.cleaning.webproject.models.CleanService">
+      <point x="-68.8125" y="-124.5" />
+      <point x="494.08291666666673" y="607.0" />
+      <point x="382.79895833333336" y="607.0" />
+      <point x="382.79895833333336" y="504.0" />
+      <point x="329.5015625" y="504.0" />
+      <point x="69.59999999999991" y="80.5" />
+    </edge>
+    <edge source="com.cleaning.webproject.controllers.RegistrationController" target="com.cleaning.webproject.models.Role">
+      <point x="64.66666666666674" y="-58.5" />
+      <point x="1182.7104166666668" y="627.0" />
+      <point x="1235.66875" y="627.0" />
+      <point x="1235.66875" y="100.0" />
+      <point x="1124.5202083333334" y="100.0" />
+      <point x="24.666666666666686" y="37.5" />
+    </edge>
+    <edge source="com.cleaning.webproject.repo.OrderRepository" target="com.cleaning.webproject.models.OrderService">
+      <point x="0.0" y="-14.5" />
+      <point x="506.8473958333333" y="514.0" />
+      <point x="464.66875" y="514.0" />
+      <point x="-99.0" y="113.5" />
+    </edge>
+    <edge source="com.cleaning.webproject.repo.UserRepo" target="com.cleaning.webproject.models.User">
+      <point x="0.0" y="-26.5" />
+      <point x="983.3954166666667" y="514.0" />
+      <point x="978.6687499999999" y="514.0" />
+      <point x="0.0" y="179.5" />
+    </edge>
+    <edge source="com.cleaning.webproject.controllers.RegistrationController" target="com.cleaning.webproject.models.User">
+      <point x="0.0" y="-58.5" />
+      <point x="1118.04375" y="627.0" />
+      <point x="1115.8354166666668" y="627.0" />
+      <point x="1115.8354166666668" y="514.0" />
+      <point x="1143.0020833333333" y="514.0" />
+      <point x="164.33333333333337" y="179.5" />
+    </edge>
+    <edge source="com.cleaning.webproject.controllers.RegistrationController" target="com.cleaning.webproject.repo.UserRepo">
+      <point x="-64.66666666666669" y="-58.5" />
+      <point x="1053.3770833333333" y="627.0" />
+      <point x="1033.1454166666667" y="627.0" />
+      <point x="49.75" y="26.5" />
+    </edge>
+    <edge source="com.cleaning.webproject.controllers.AdminController" target="com.cleaning.webproject.models.CleanService">
+      <point x="-96.33333333333326" y="-102.5" />
+      <point x="48.16666666666674" y="627.0" />
+      <point x="116.95156250000002" y="627.0" />
+      <point x="116.95156250000002" y="504.0" />
+      <point x="190.30156250000005" y="504.0" />
+      <point x="-69.60000000000002" y="80.5" />
+    </edge>
+    <edge source="com.cleaning.webproject.controllers.AdminController" target="com.cleaning.webproject.repo.CleanServiceRepository">
+      <point x="96.33333333333326" y="-102.5" />
+      <point x="240.83333333333326" y="627.0" />
+      <point x="215.79895833333336" y="627.0" />
+      <point x="-48.5" y="14.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.7481292517006802" x="689.238053243819" y="403.16233044554065" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Constructors</Category>
+    <Category>Methods</Category>
+    <Category>Properties</Category>
+    <Category>Inner Classes</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
