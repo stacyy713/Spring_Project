@@ -1,0 +1,23 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://thymeleaf.org">
+<head>
+    <!--    <title th:text="${title}"/>-->
+    <title>Клінінгові послуги</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css">
+</head>
+<body>
+<header th:insert="blocks/header :: header"></header>
+<div class="container mt-5">
+    <h1 class="text-red text-center">Перелік доступних клінінгових послуг</h1>
+    <div th:each="el : ${services}" class="alert alert-info mt-2">
+        <h3 th:text="${el.name_service}"/>
+        <p th:text="${el.price_service} + ' гривень'"/>
+    </div>
+    <div class="text-center"><a href="/form_order"><button type="button" class="btn btn-info">Для замовлення послуг увійдіть
+        у систему або зареєструйтеся</button></a></div>
+    <br>
+</div>
+</body>
+</html>

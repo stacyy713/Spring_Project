@@ -1,0 +1,23 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://thymeleaf.org">
+<head>
+    <!--    <title th:text="${title}"/>-->
+    <title>Редагування сайту</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css">
+</head>
+<body>
+<header th:insert="blocks/header :: header"></header>
+<div class="container mt-5">
+    <h1 class="text-red text-center">Редагування клінінгової послуги</h1>
+    <div th:each="el : ${cs}">
+    <form method="post">
+        <input type="text" th:value="${el.name_service}" name="name" placeholder="Назва клінінгової послуги" class="form-control"><br>
+        <input type="text" th:value="${el.price_service}" name="price" placeholder="Вартість" class="form-control"><br>
+        <button type="submit" class="btn btn-success">Оновити інформацію</button>
+    </form>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Клінінгова компанія</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css">
+</head>
+<body>
+<header th:insert="blocks/header :: header"></header>
+<main>
+        <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
+            <h1 class="display-4 fw-normal">Клінінгова компанія</h1>
+            <p class="fs-5 text-muted">Ми допоможемо тобі заощадити час. Довір нам турботу про себе.</p>
+            <img src="https://atn.ua/sites/default/files/uborka_kvartir.jpg">
+        </div>
+
+        <div class="text-center">
+            <div class="col-12">
+                <a href="/login">
+                    <button type="button" class="btn btn-primary btn-lg">Вхід</button>
+                </a><br>
+                <p></p>
+                <form th:action="@{/logout}" method="post">
+                    <button type="submit" class="btn btn-secondary btn-lg">Вихід</button>
+                    <br>
+                </form>
+                <br>
+            </div>
+        </div>
+</main>
+<header th:insert="blocks/footer :: footer"></header>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://thymeleaf.org">
+<head>
+    <title>Редагування сайту</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css">
+</head>
+<body>
+<header th:insert="blocks/header :: header"></header>
+<div class="container mt-5">
+    <h1 class="text-red text-center">Деталі замовлення послуги</h1>
+    <form action="/form_order" method="post">
+        <input type="text" name="user_id" placeholder="ID юзера" class="form-control"><br>
+        <input type="text" name="service_id" placeholder="ID послуги" class="form-control"><br>
+        <input type="text" name="date_service" placeholder="Дата, на яку бажаєте замовити послугу" class="form-control"><br>
+        <input type="text" name="time_service" placeholder="Час" class="form-control"><br>
+        <input type="text" name="add_info" placeholder="Коментар" class="form-control"><br>
+        <button type="submit" class="btn btn-success">Замовити</button>
+    </form>
+</div>
+</body>
+</html>
